@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Silk Road — Temná kapitola internetu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0b0d;
+      color: #e6e6e6;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.9)
+        ),
+        url("hero.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #aaa;
+      max-width: 700px;
+    }
+
+    section {
+      padding: 100px 10%;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      border-left: 5px solid #ff3b3b;
+      padding-left: 20px;
+    }
+
+    .history p {
+      max-width: 900px;
+      margin-bottom: 20px;
+      color: #cfcfcf;
+    }
+
+    .products {
+      background-color: #111114;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .product {
+      background: #16161a;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+    }
+
+    .product h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #ff3b3b;
+    }
+
+    .product ul {
+      list-style: none;
+    }
+
+    .product li {
+      margin-bottom: 10px;
+      color: #bbb;
+    }
+
+    footer {
+      padding: 40px;
+      text-align: center;
+      background: #0a0a0c;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>SILK ROAD</h1>
+    <p>
+      Temná kapitola internetu. Iluze svobody, anonymita a cena,
+      kterou za ni lidé zaplatili.
+    </p>
+  </div>
+</header>
+
+<section class="history">
+  <h2 class="section-title">Historie Silk Road</h2>
+  <p>
+    Silk Road byl nelegální online trh fungující na síti Tor,
+    založený v roce 2011 Rossen Ulbrichtem, známým pod pseudonymem
+    <strong>Dread Pirate Roberts</strong>.
+  </p>
+  <p>
+    Jeho cílem bylo vytvořit svobodné tržiště bez státní kontroly,
+    kde anonymita a kryptoměny umožní obchod bez prostředníků.
+    Realita však rychle ukázala temnou stránku této „svobody“.
+  </p>
+  <p>
+    V roce 2013 byl Ulbricht dopaden FBI. Silk Road byl uzavřen
+    a stal se symbolem toho, jak tenká je hranice mezi ideálem
+    a zločinem.
+  </p>
+</section>
+
+<section class="products">
+  <h2 class="section-title">
+    Nejčastěji prodávané látky (a jejich následky)
+  </h2>
+
+  <div class="product-grid">
+    <div class="product">
+	  <img src="cocaine.jpg" alt="Cocaine">
+      <h3>KOKAIN</h3>
+      <ul>
+        <li>Stimulant</li>
+        <li>Silná psychická závislost</li>
+        <li>Rozklad dopaminového systému</li>
+        <li>Krátký efekt — dlouhodobé poškození</li>
+      </ul>
+    </div>
+
+    <div class="product">
+	  <img src="HEROIN.jpg" alt="HEROIN">
+      <h3>HEROIN</h3>
+      <ul>
+        <li>Opiát</li>
+        <li>Extrémně návykový</li>
+        <li>Vysoké riziko předávkování</li>
+        <li>Rychlá fyzická degradace</li>
+      </ul>
+    </div>
+
+    <div class="product">
+   	<img src="LSD.jpg" alt="LSD">
+      <h3>LSD</h3>
+      <ul>
+        <li>Psychedelikum</li>
+        <li>Nevytváří fyzickou závislost</li>
+        <li>Riziko psychóz</li>
+        <li>Zvlášť nebezpečné pro mladé</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Tento web slouží výhradně k vzdělávacím účelům.<br>
+  Žádná forma propagace nelegálních látek.
+</footer>
+
+</body>
+</html>
